@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: monospace;
+        padding: 0 10%;
+        background-color: beige;
+      }
+      .container {
+        display: flex;
+      }
+      .navbar {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0px 30px;
+      }
+      .nav-brand {
+        font-weight: 700;
+      }
+      .nav-item {
+        font-weight: 700;
+        display: flex;
+        width: 50%;
+        list-style: none;
+        justify-content: space-around;
+      }
+      .row {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      .col {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        height: 200px;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div
+        class="navbar"
+        style="
+          border: 4px solid rgba(0, 0, 0, 0.5);
+          border-radius: 15px;
+          background-color: blanchedalmond;
+          filter: drop-shadow(5px 5px 5px black);
+        "
+      >
+        <div class="nav-brand" style="font-size: x-large">
+          <p>Wahyu Widiantoro</p>
+        </div>
+        <ul class="nav-item" style="font-size: x-large">
+          <li>Home</li>
+          <li>Skills</li>
+          <li>Project</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container" style="padding-top: 40px; padding-bottom: 50px">
+      <div class="row" style="height: 80vh; justify-content: stretch">
+        <div class="col" style="height: 100%; padding-left: 80px">
+          <h1
+            style="
+              font-size: 56px;
+              margin-bottom: 0;
+              filter: drop-shadow(3px 3px 3px black);
+            "
+          >
+            Hi. I'm Wahyu.<br />A Web Developer
+          </h1>
+          <p style="font-size: x-large">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+            repellendus quia quae consequatur esse officiis dolores omnis
+            quaerat provident itaque.
+          </p>
+        </div>
+        <div class="col" style="align-items: center; height: 100%">
+          <div
+            style="
+              position: relative;
+              overflow: hidden;
+              border: 4px solid rgba(0, 0, 0, 0.5);
+              border-radius: 15px;
+              background-color: blanchedalmond;
+              filter: drop-shadow(5px 5px 5px black);
+              width: 350px;
+              height: 450px;
+            "
+          >
+            <img
+              src="gambar.png"
+              alt=""
+              width="350px"
+              style="
+                position: absolute;
+                left: -40px;
+                filter: drop-shadow(0 5px 5px black);
+              "
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div
+        class="row"
+        style="
+          border: 4px solid rgba(0, 0, 0, 0.5);
+          border-radius: 20px;
+          height: auto;
+          justify-items: stretch;
+          background-color: blanchedalmond;
+          filter: drop-shadow(5px 5px 5px black);
+        "
+      >
+        <div
+          class="col"
+          style="width: 25%; justify-content: center; padding: 0px 30px"
+        >
+          <p style="font-size: x-large; font-weight: 700">My Skills</p>
+        </div>
+        <div class="col" style="border-left: 4px solid rgba(0, 0, 0, 0.5)">
+          <div
+            class="row"
+            style="justify-content: space-around; flex-wrap: wrap"
+          >
+            <div class="col" style="width: auto; margin: 30px">
+              <div style="width: 100px; height: 100px">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"
+                  alt=""
+                  width="100%"
+                  height="100%"
+                  style="object-fit: cover; border-radius: 20px"
+                />
+                <div style="text-align: center">javaScript</div>
+              </div>
+            </div>
+            <div class="col" style="width: auto; margin: 30px">
+              <div style="width: 100px; height: 100px; border-radius: 20px">
+                <img
+                  src="https://www.php.net/images/meta-image.png"
+                  alt=""
+                  width="100%"
+                  height="100%"
+                  style="object-fit: cover; border-radius: 20px"
+                />
+                <div style="text-align: center">PHP</div>
+              </div>
+            </div>
+            <div class="col" style="width: auto; margin: 30px">
+              <div style="width: 100px; height: 100px">
+                <img
+                  src="data:image/png;base64,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"
+                  alt=""
+                  width="100%"
+                  height="100%"
+                  style="object-fit: cover; border-radius: 20px"
+                />
+                <div style="text-align: center">CodeIgniter</div>
+              </div>
+            </div>
+            <div class="col" style="width: auto; margin: 30px">
+              <div style="width: 100px; height: 100px">
+                <img
+                  src="https://pbs.twimg.com/profile_images/1255113654049128448/J5Yt92WW_400x400.png"
+                  alt=""
+                  width="100%"
+                  height="100%"
+                  style="object-fit: cover; border-radius: 20px"
+                />
+                <div style="text-align: center">MySQL</div>
+              </div>
+            </div>
+            <div class="col" style="width: auto; margin: 30px">
+              <div style="width: 100px; height: 100px">
+                <img
+                  src="https://miro.medium.com/v2/resize:fit:800/1*bc9pmTiyKR0WNPka2w3e0Q.png"
+                  alt=""
+                  width="100%"
+                  height="100%"
+                  style="object-fit: cover; border-radius: 20px"
+                />
+                <div style="text-align: center">Node Js</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="margin-top: 50px">
+      <div class="row">
+        <div
+          class="col"
+          style="border: 4px solid rgba(0, 0, 0, 0.5); border-radius: 20px"
+        >
+          <div class="row">
+            <div class="col">
+              <p></p>
+            </div>
+          </div>
+          <div class="row" style="border-top: 4px solid rgba(0, 0, 0, 0.5)">
+            <div class="col"></div>
+          </div>
+        </div>
+        <div class="col" style="width: 50px"></div>
+        <div
+          class="col"
+          style="border: 4px solid rgba(0, 0, 0, 0.5); border-radius: 20px"
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>
