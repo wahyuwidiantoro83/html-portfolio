@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        /* background-color: black; */
+        font-family: monospace;
+        margin: 0;
+        padding: 0px 15vw;
+      }
+      p {
+        font-size: large;
+      }
+      .container {
+        display: flex;
+        border-bottom: 2px solid;
+        border-left: 2px solid;
+        border-right: 2px solid;
+      }
+      .row {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+      }
+      .col1 {
+        display: flex;
+        width: 25%;
+        box-sizing: border-box;
+        padding-left: 24px;
+      }
+      .col2 {
+        display: flex;
+        border-left: 2px solid;
+        width: 75%;
+        box-sizing: border-box;
+        padding: 5px 24px 5px 24px;
+        flex-direction: column;
+      }
+      .nav {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+      }
+      .nav > ul {
+        display: flex;
+        list-style: none;
+        width: 50%;
+        justify-content: space-around;
+        font-size: large;
+        font-weight: 700;
+      }
+      #title {
+        font-size: 56px;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col1" style="justify-content: center">
+          <p style="font-size: large; font-weight: 700">
+            &ltWahyu Widiantoro/>
+          </p>
+        </div>
+        <div class="col2" style="border-left: 2px solid">
+          <div class="nav">
+            <ul>
+              <li>Headline</li>
+              <li>About Me</li>
+              <li>Skills</li>
+              <li>Projects</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col1">
+          <p>Headline</p>
+        </div>
+        <div class="col2"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col1"></div>
+        <div class="col2">
+          <p id="title">Hi. I'm Wahyu Widiantoro. A Web Developer</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+            accusantium unde aliquam quis pariatur? Repudiandae, deleniti
+            laboriosam, ea cupiditate, odio reprehenderit eum dolorem vero
+            molestias tenetur rerum vitae? Perspiciatis, fuga!
+          </p>
+          <a id="btn" href="">Learn More -></a>
+          <a href="">Resume</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
