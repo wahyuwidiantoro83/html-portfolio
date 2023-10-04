@@ -1,0 +1,300 @@
+:root {
+  --border-table-light: rgba(0, 0, 0, 0.3);
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding-left: 15%;
+  padding-right: 15%;
+  font-family: "Ubuntu Mono", monospace;
+}
+.container {
+  display: flex;
+  width: 100%;
+}
+.col1 {
+  display: flex;
+  width: 25%;
+  border: 1px solid var(--border-table-light);
+}
+.col2 {
+  display: flex;
+  width: 75%;
+  border: 1px solid var(--border-table-light);
+}
+.brand {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+}
+.nav-brand {
+  width: 100%;
+  text-align: left;
+  padding-left: 20px;
+  font-weight: bold;
+  font-size: large;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  font-weight: 700;
+  font-size: large;
+}
+.section-title {
+  width: 100%;
+  font-size: large;
+  text-align: left;
+  padding: 10px;
+}
+.banner {
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  padding: 0px 20px 50px 20px;
+}
+.banner-title {
+  font-size: 52px;
+  font-weight: 700;
+}
+.banner-desc {
+  font-size: large;
+}
+.btn {
+  padding: 6px;
+  text-decoration: none;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: large;
+  border: 2px solid black;
+  background: none;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.img-headline-container {
+  position: relative;
+  overflow: hidden;
+}
+.img-headline {
+  position: absolute;
+  width: 100%;
+  height: 20vh;
+  object-fit: cover;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  filter: grayscale(100%);
+}
+
+.img-headline:hover {
+  filter: none;
+}
+
+.about-container {
+  flex-direction: column;
+  padding: 10px;
+}
+
+.about-item {
+  border: 2px solid black;
+  width: 50%;
+  margin: 10px;
+  padding: 20px 20px;
+  font-size: large;
+}
+
+.about-item:hover {
+  background-color: black;
+  color: white;
+}
+
+.list-item-about > ul > li > ul {
+  list-style: "-";
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.img-about-container {
+  position: relative;
+  overflow: hidden;
+}
+.img-about {
+  position: absolute;
+  width: 45%;
+  height: 100%;
+  object-fit: cover;
+  bottom: 0;
+  right: 0;
+  filter: grayscale(100%);
+}
+
+.img-about:hover {
+  filter: none;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.skill-item {
+  width: 30%;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  height: 250px;
+  border: 2px solid black;
+  font-size: large;
+}
+
+.img-item {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  background: white;
+}
+
+.skill-item:hover {
+  background-color: black;
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.socmed {
+  display: flex;
+  width: 30%;
+  align-items: center;
+}
+.contact-us {
+  display: flex;
+  width: 70%;
+}
+.project-grid-container {
+  display: grid;
+  padding: 20px;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 200px 200px 200px;
+  grid-template-areas:
+    "project1 project1 project2"
+    "project4 center project2"
+    "project4 project3 project3";
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.project1 {
+  border: 2px solid black;
+  grid-area: project1;
+}
+.project2 {
+  border: 2px solid black;
+  grid-area: project2;
+}
+.project3 {
+  border: 2px solid black;
+  grid-area: project3;
+}
+.project4 {
+  border: 2px solid black;
+  grid-area: project4;
+}
+
+.center {
+  grid-area: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-content {
+  width: 100%;
+  height: 100%;
+  color: white;
+  position: relative;
+  display: flex;
+  filter: grayscale(100%);
+}
+.img-project {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-desc {
+  font-weight: bold;
+  z-index: 10;
+  margin: 20px;
+}
+.project-content:hover {
+  filter: none;
+  color: black;
+}
+
+.footer-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.socmed {
+  display: flex;
+  width: 40%;
+  height: 100%;
+}
+
+.socmed-list {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.socmed-item {
+  width: 75px;
+  height: 75px;
+  margin: 10px;
+}
+
+.contact-us {
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+}
+
+.form-group {
+  margin: 10px;
+}
+.form-control {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  border: 2px solid black;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: large;
+}

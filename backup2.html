@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        /* background-color: black; */
+        font-family: monospace;
+        margin: 0;
+        padding: 0px 15vw;
+      }
+      p {
+        font-size: large;
+      }
+      .container {
+        display: flex;
+        border-bottom: 2px solid;
+        border-left: 2px solid;
+        border-right: 2px solid;
+      }
+      .row {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+      }
+      .col1 {
+        display: flex;
+        width: 25%;
+        box-sizing: border-box;
+        padding-left: 24px;
+      }
+      .col2 {
+        display: flex;
+        border-left: 2px solid;
+        width: 75%;
+        box-sizing: border-box;
+        padding: 24px 24px;
+        flex-direction: column;
+        overflow: hidden;
+        position: relative;
+      }
+      .nav {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        align-items: center;
+      }
+      .nav > ul {
+        align-items: center;
+        display: flex;
+        list-style: none;
+        width: 50%;
+        justify-content: space-around;
+        font-size: large;
+        font-weight: 700;
+      }
+      .nav-item > a {
+        text-decoration: none;
+        color: black;
+      }
+      .nav-item > a:hover {
+        border-bottom: 3px solid;
+      }
+      #title {
+        font-size: 56px;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+      .btn {
+        position: relative;
+        border: 2px solid black;
+        font-size: large;
+        color: black;
+        width: fit-content;
+        padding: 6px;
+        text-decoration: none;
+        overflow: hidden;
+      }
+
+      .btn-utama {
+        position: relative;
+        border: 2px solid black;
+        font-size: large;
+        color: black;
+        width: fit-content;
+        padding: 6px;
+        text-decoration: none;
+        overflow: hidden;
+      }
+
+      .btn-utama:hover {
+        color: whitesmoke;
+      }
+
+      .btn-utama:before {
+        content: "";
+        position: absolute;
+        background: #000000;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 100%;
+        z-index: -1;
+        -webkit-transition: top 0.09s ease-in;
+      }
+
+      .btn-utama:hover:before {
+        top: 0;
+      }
+
+      .btn:hover {
+        color: whitesmoke;
+      }
+
+      .btn:before {
+        content: "";
+        position: absolute;
+        background: #000000;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 100%;
+        z-index: -1;
+        -webkit-transition: top 0.09s ease-in;
+      }
+
+      .btn:hover:before {
+        top: 0;
+      }
+
+      .item {
+        position: relative;
+      }
+      .item:hover {
+        color: whitesmoke;
+      }
+      .item:before {
+        content: "";
+        position: absolute;
+        background: #000000;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        right: 100%;
+        z-index: -1;
+        -webkit-transition: right 0.09s ease-in;
+      }
+
+      .item:hover:before {
+        right: 0;
+      }
+      .pic {
+        filter: grayscale(100%) opacity(85%);
+      }
+      .pic:hover {
+        filter: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col1" style="justify-content: center; padding: 0">
+          <p style="font-size: large; font-weight: 700">
+            &ltWahyu Widiantoro/>
+          </p>
+        </div>
+        <div class="col2" style="border-left: 2px solid; padding: 0">
+          <div class="nav">
+            <ul>
+              <li class="nav-item"><a href="">Headline</a></li>
+              <li class="nav-item"><a href="">About Me</a></li>
+              <li class="nav-item"><a href="">Skills</a></li>
+              <li class="nav-item"><a href="">Projects</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col1">
+          <p>Headline</p>
+        </div>
+        <div class="col2"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row" style="height: 80vh">
+        <div class="col1"></div>
+        <div class="col2" style="padding-top: 75px; padding-bottom: 75px">
+          <p id="title">Hi. I'm Wahyu Widiantoro. A Web Developer</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+            accusantium unde aliquam quis pariatur? Repudiandae, deleniti
+            laboriosam, ea cupiditate, odio reprehenderit eum dolorem vero
+            molestias tenetur rerum vitae? Perspiciatis, fuga!
+          </p>
+          <div>
+            <a class="btn-utama" href="">Learn More -></a>
+            <a class="btn" href="">Resume</a>
+          </div>
+          <div class="div">
+            <img
+              class="pic"
+              src="asset1.jpg"
+              alt=""
+              width="100%"
+              height="150px"
+              style="object-fit: cover; position: absolute; bottom: 0; left: 0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col1">
+          <p>About Me</p>
+        </div>
+        <div class="col2"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col1"></div>
+        <div class="col2" style="position: relative">
+          <div
+            class="item"
+            style="
+              display: flex;
+              width: 50%;
+              border: 3px solid;
+              flex-direction: column;
+              justify-content: center;
+              margin-bottom: 20px;
+              box-sizing: border-box;
+              padding: 24px;
+            "
+          >
+            <p>Education</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, eius
+              adipisci consequatur cumque veniam repellendus nostrum atque
+              incidunt odit consectetur, voluptates tenetur, voluptatibus hic
+              nesciunt necessitatibus. Vitae unde iusto nihil?
+            </p>
+          </div>
+          <div
+            class="item"
+            style="
+              display: flex;
+              width: 50%;
+              border: 3px solid;
+              flex-direction: column;
+              justify-content: center;
+              box-sizing: border-box;
+              padding: 24px;
+            "
+          >
+            <p>Work Experience</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, eius
+              adipisci consequatur cumque veniam repellendus nostrum atque
+              incidunt odit consectetur, voluptates tenetur, voluptatibus hic
+              nesciunt necessitatibus. Vitae unde iusto nihil?
+            </p>
+          </div>
+          <img
+            class="pic"
+            src="asset2.jpg"
+            alt=""
+            width="45%"
+            height="100%"
+            style="
+              position: absolute;
+              object-fit: cover;
+              top: 0;
+              right: 0;
+              bottom: 0;
+            "
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col1">
+          <p>Skills</p>
+        </div>
+        <div class="col2"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col1"></div>
+        <div class="col2">
+          <div
+            style="
+              display: flex;
+              justify-content: space-around;
+              flex-wrap: wrap;
+            "
+          >
+            <div
+              class="item"
+              style="
+                width: 200px;
+                height: 200px;
+                border: 3px solid rgba(0, 0, 0, 0.6);
+                margin: 10px;
+                text-align: center;
+                box-sizing: border-box;
+                padding: 10px;
+              "
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"
+                alt=""
+                width="100%"
+                height="70%"
+                style="object-fit: cover"
+              />
+              <p>JavaScript</p>
+            </div>
+            <div
+              class="item"
+              style="
+                width: 200px;
+                height: 200px;
+                border: 3px solid rgba(0, 0, 0, 0.6);
+                margin: 10px;
+                text-align: center;
+                box-sizing: border-box;
+                padding: 10px;
+              "
+            >
+              <img
+                src="https://www.php.net/images/meta-image.png"
+                alt=""
+                width="100%"
+                height="70%"
+                style="object-fit: cover"
+              />
+              <p>PHP</p>
+            </div>
+            <div
+              class="item"
+              style="
+                width: 200px;
+                height: 200px;
+                border: 3px solid rgba(0, 0, 0, 0.6);
+                margin: 10px;
+                text-align: center;
+                box-sizing: border-box;
+                padding: 10px;
+              "
+            >
+              <img
+                src="https://res.cloudinary.com/practicaldev/image/fetch/s--u9yx6diw--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/anuqor6vk1ibmhq8ntrf.png"
+                alt=""
+                width="100%"
+                height="70%"
+                style="object-fit: cover"
+              />
+              <p>Node Js</p>
+            </div>
+            <div
+              class="item"
+              style="
+                width: 200px;
+                height: 200px;
+                border: 3px solid rgba(0, 0, 0, 0.6);
+                margin: 10px;
+                text-align: center;
+                box-sizing: border-box;
+                padding: 10px;
+              "
+            >
+              <img
+                src="https://www.bairesdev.com/wp-content/uploads/2022/06/Picture6-1.svg"
+                alt=""
+                width="100%"
+                height="70%"
+                style="object-fit: cover"
+              />
+              <p>React Js</p>
+            </div>
+            <div
+              class="item"
+              style="
+                width: 200px;
+                height: 200px;
+                border: 3px solid rgba(0, 0, 0, 0.6);
+                margin: 10px;
+                text-align: center;
+                box-sizing: border-box;
+                padding: 10px;
+              "
+            >
+              <img
+                src="https://itbox.id/wp-content/uploads/2022/10/MySQL-Logo.jpeg"
+                alt=""
+                width="100%"
+                height="70%"
+                style="object-fit: cover"
+              />
+              <p>MySQL</p>
+            </div>
+            <div
+              class="item"
+              style="
+                width: 200px;
+                height: 200px;
+                border: 3px solid rgba(0, 0, 0, 0.6);
+                margin: 10px;
+                text-align: center;
+                box-sizing: border-box;
+                padding: 10px;
+              "
+            >
+              <img
+                src="https://brandlogos.net/wp-content/uploads/2022/08/codeigniter_logomark-logo_brandlogos.net_q78by-512x512.png"
+                alt=""
+                width="100%"
+                height="70%"
+                style="object-fit: cover"
+              />
+              <p>CodeIgniter</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col1">
+          <p>Projects</p>
+        </div>
+        <div class="col2"></div>
+      </div>
+    </div>
+  </body>
+</html>
